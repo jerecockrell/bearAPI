@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/jerecockrell/bearAPI/issues"
   },
-  "homepage": "https://github.com/jerecockrell/bearAPI#readme"
+  "homepage": "https://github.com/jerecockrell/bearAPI#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
