@@ -14,6 +14,22 @@ app.get('/api/bears', function(req, res){
 	res.json(bears);
 });
 
+//localhost:3000/api/bear/45432
+//localhost:3000/api/bear/...
+app.get('/api/bear/:id', function(req, res){
+
+	var id = Number(req.params.id);
+
+	console.log(id);
+
+	bears.forEach(function(foundBear){
+		if (foundBear.id === id) {
+			res.json(foundBear);
+		}
+	});
+});
+
+
 app.post('/api/bear', function(req, res){
 	var newBear = {};
 
